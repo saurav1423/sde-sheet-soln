@@ -1,10 +1,11 @@
 // Brute force solution will be to sort the array
-    // time - 0(nlogn),  space - 0(1)
+time - 0(nlogn),  space - 0(1)
 
 
-// 2nd solution is to use counting sort(for loop chalao, 0,1,2 ke occurances ko count krlo)
-//pirse for loop chalake jitne 0 thai, utna 0 daal do array me, jitne 1 thai utne 1 and so on
-//time - 0(N) + 0(N)   space - 0(1)
+// 2nd solution
+Use counting sort(for loop chalao, 0,1,2 ke occurances ko count krlo)
+pirse for loop chalake jitne 0 thai, utna 0 daal do array me, jitne 1 thai utne 1 and so on
+time - 0(N) + 0(N)   space - 0(1)
 
 
 //optimal solution
