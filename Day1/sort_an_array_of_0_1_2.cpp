@@ -34,3 +34,5 @@ void sortColors(vector<int>& nums) {
             }
         }
     }
+
+ time - 0(N)  space - 0(1)   
