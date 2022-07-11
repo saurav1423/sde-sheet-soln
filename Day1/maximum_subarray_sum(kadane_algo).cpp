@@ -1,4 +1,11 @@
-//brute 
+Given an array Arr[] of N integers. Find the contiguous sub-array(containing at least one number)
+which has the maximum sum and return its sum.
+
+eg -
+Arr[] = {1,2,3,-2,5}
+ans - 9  (from 1, 2, 3, -2, 5)
+
+//brute force approach
 we will travarse over all subarray and will count maximum subarray sum and then return it 
 for making subarray 
 for(int i = 0 to n-1){

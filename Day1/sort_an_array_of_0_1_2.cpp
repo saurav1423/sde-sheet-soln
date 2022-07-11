@@ -1,3 +1,6 @@
+Input: nums = [2,0,2,1,1,0]
+Output: [0,0,1,1,2,2]
+
 // Brute force solution will be to sort the array
 time - 0(nlogn),  space - 0(1)
 

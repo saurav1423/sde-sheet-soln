@@ -20,5 +20,39 @@ int binarySearch(int arr[], int l, int r, int x)
     return -1;
 }
 
-=======================================================================
+======================================================================
+
+|----L1-------||--L2-|
+1 -- 2 -- 3 -- 4 -- 5
+              |     |
+               7 -- 6
+
+let say slow and fast meet at 5 when slow was moving 1 step and fast was moving 2 steps.
+let say length from 1 to 4 is L1 and 4 to 5 is L2 and 5 to 4 is L3
+
+fast = num[0];
+while(slow != fast){
+  slow = num[slow];
+  fast = num[fast];
+}
+
+now according to above code and the lines we wrote 
+fast will move L1 and slow will move L3
+So if we can proof that L1 and L3 is equal then both will meet at 4 for sure, will get proved 
+
+proof:-
+before meeting 
+slow moved = L1 + L2
+fast moved = L1 + L2 + nC [where n is integer and c is length of loop]  -- 1
+
+also we know fast distance = 2*slow distance
+putting in 1
+2(L1 + L2) = L1 + L2 + nC
+L1+L2 = nC
+L1 = nC - L2
+   = L3
+
+(Try to thing vro, you will get it)   
+
+======================================================================
 

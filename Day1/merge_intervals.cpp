@@ -1,6 +1,9 @@
+Input: intervals = [[1,3],[2,6],[8,10],[15,18]]
+Output: [[1,6],[8,10],[15,18]]
+
 //ask interviewer, is given data is sorted or not(as if it is not sorted then we will have to sort it)
 
-//brute
+//brute force approach
 A simple approach is to start from the first interval and compare it with all other intervals for overlapping,
 if it overlaps with any other interval, then remove the other interval from the list and merge the other into 
 the first interval. Repeat the same steps for the remaining intervals after the first. 

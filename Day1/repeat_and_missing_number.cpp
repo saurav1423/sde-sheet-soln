@@ -1,4 +1,10 @@
-//brute force 
+Given an unsorted array of size n. Array elements are in the range of 1 to n. One number from set {1, 2, …n} 
+is missing and one number occurs twice in the array. Find these two numbers.
+
+eg - Input: arr[] = {3, 1, 3}
+     Output: Missing = 2, Repeating = 3
+
+//brute force approach
 number 0 se n me hoga diya hai. so we can make an array of size n+1 where we will store the count of each element
 and then we will see which one count is missing, and which one have 2 as a count.
 time - 0(N) + 0(N)  space - 0(N)

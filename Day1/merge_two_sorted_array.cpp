@@ -1,4 +1,11 @@
 //question is merge two sorted array without using extra space 
+Input:
+X[] = { 1, 4, 7, 8, 10 }
+Y[] = { 2, 3, 9 }
+ 
+Output:
+X[] = { 1, 2, 3, 4, 7 }
+Y[] = { 8, 9, 10 }
 
 void merge(int X[], int Y[], int m, int n)
 {
