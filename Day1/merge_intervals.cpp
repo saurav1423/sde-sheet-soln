@@ -31,4 +31,4 @@ vector<vector<int>> merge(vector<vector<int>>& intervals) {
         return result;
     }
 
- time - 0(NlogN) + 0(N)  space - 0(N)   
+ time - 0(NlogN)  space - 0(N)   
