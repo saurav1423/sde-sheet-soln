@@ -1,58 +1,131 @@
-Xor of any number with 0 is that number. Xor of same number is zero. 
+Xor of any number with 0 is that number. Xor of same number is zero.
 X^0 = X
 X^X = 0
 
-======================================================================
+============================================================================================================================================
 
 int binarySearch(int arr[], int l, int r, int x)
 {
-    if (r >= l) {
-        int mid = l + (r - l) / 2;
+if (r >= l) {
+int mid = l + (r - l) / 2;
 
         if (arr[mid] == x)
             return mid;
- 
+
         if (arr[mid] > x)
             return binarySearch(arr, l, mid - 1, x);
- 
+
         return binarySearch(arr, mid + 1, r, x);
     }
     return -1;
+
 }
 
-======================================================================
+============================================================================================================================================
 
 |----L1-------||--L2-|
 1 -- 2 -- 3 -- 4 -- 5
-              |     |
-               7 -- 6
+| |
+7 -- 6
 
 let say slow and fast meet at 5 when slow was moving 1 step and fast was moving 2 steps.
 let say length from 1 to 4 is L1 and 4 to 5 is L2 and 5 to 4 is L3
 
 fast = num[0];
 while(slow != fast){
-  slow = num[slow];
-  fast = num[fast];
+slow = num[slow];
+fast = num[fast];
 }
 
-now according to above code and the lines we wrote 
+now according to above code and the lines we wrote
 fast will move L1 and slow will move L3
-So if we can proof that L1 and L3 is equal then both will meet at 4 for sure, will get proved 
+So if we can proof that L1 and L3 is equal then both will meet at 4 for sure, will get proved
 
 proof:-
-before meeting 
+before meeting
 slow moved = L1 + L2
-fast moved = L1 + L2 + nC [where n is integer and c is length of loop]  -- 1
+fast moved = L1 + L2 + nC [where n is integer and c is length of loop] -- 1
 
-also we know fast distance = 2*slow distance
+also we know fast distance = 2\*slow distance
 putting in 1
 2(L1 + L2) = L1 + L2 + nC
 L1+L2 = nC
 L1 = nC - L2
-   = L3
+= L3
 
-(Try to thing vro, you will get it)   
+(Try to thing vro, you will get it)
 
-======================================================================
+============================================================================================================================================
 
+//sort an array in decreasing order
+sort(A.begin(), A.end(), f);
+
+outside main function
+bool f(int x, int y)
+return x>y;
+
+============================================================================================================================================
+
+Upper Bound and Lower Bound
+
+-> Upper Bound jo number search kro usse just bda wala lauta dega(whether wo number array me hai ya ni, doesnt matter)
+eg - {1, 2, 6, 8, 9, 12}
+u-bound(8) - 9
+u-bound(10) - 12
+
+-> Lower Bound jo number search kro, agar wo exist krta to whi lauta dega ni to next greater
+eg - {1, 2, 6, 8, 9, 12}  
+ l-bound(8) - 8
+u-bound(10) - 12
+
+-> Both work on sorted array in 0(logn) and on normal array 0(n).
+
+## Use on vector:-
+
+vector<int> srv = {1, 3, 5, 6, 77, 23}
+int i = lower_bound(srv.begin(), srv.end(), 6) - srv.begin()
+cout<<i;
+
+output - 3 (wil return index)
+
+int i = lower_bound(srv.begin(), srv.end(), 6)
+cout<<\*i;
+
+output - 6(value)
+
+## Use on Array:-
+
+int arr[] = {10, 20, 30, 40, 50}
+int i = upper_bound(arr, arr+5, 45) - arr;
+cout<<i;
+
+output - 4 (index)
+
+int i = upper_bound(arr, arr+5, 45);
+cout<<\*i;
+
+output - 40 (index)
+
+## Use on Set:-
+
+Dont use s.begin and s.end wala method on set as it will take 0(n)
+to do in 0(logn)
+set<int> s;
+s.lower_bound(number)
+
+-> one knowledge ki baat
+if arr = {10, 20, 30, 40, 50}
+and we do upper bound of 50, then it will give 5, but \*upper_bound will give garbage value.
+
+============================================================================================================================================
+
+How to find nCr
+
+int N = n;
+int R = r;
+double res = 1;
+
+for(int i=1; i<=R; i++)
+res = res\*(N-R+i)/i;
+
+============================================================================================================================================
