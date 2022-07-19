@@ -43,3 +43,4 @@ l1 chota le lo aur l2 bda lelo aur answer confirm kro etc
     }
 
 time - 0(max(N1, N2)), N1 and N2 are respectively length of l1 and l2
+space - 0(N) 
