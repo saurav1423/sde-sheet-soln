@@ -35,7 +35,8 @@ space - 0(M) [for set] + 0(N) [for map]
 
 //optimal (we will use two pointer approach)
 vector<vector<int>> threeSum(vector<int>& nums) {
-        if(nums.size() < 3) return 0;
+        if(nums.size() < 3) 
+            return 0;
         vector<vector<int>> ans;
         sort(nums.begin(), nums.end());
         
