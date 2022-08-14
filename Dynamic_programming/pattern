@@ -1,0 +1,23 @@
+0-1 Knapsack
+   - subset sum
+   - equal sum partition problem
+   - count number of subset with given sum
+   - Minimum subset sum differece
+   - count number of subset with given differece
+   - target sum
+
+
+Unbounded Knapsack
+   - Rod cutting problem
+   - Coin Change
+   - Coin Change: Minimum coins
+
+
+LCS(longest common subsequence)
+   - Longest commom substring
+   - shortest common supersequence
+   - minimum number of insertion and deletion
+   - Longest palindromic sequence
+   - minimum number of deletion to make string palindrome
+   - minimum number of insertion to make string palindrome
+   - longest repeating subsequence
