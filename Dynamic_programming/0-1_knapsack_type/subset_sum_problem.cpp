@@ -35,6 +35,7 @@ bool isSubsetSum(vector<int>arr, int sum){
     
 }
 
+
 time - The above solution may try all subsets of given set in worst case. Therefore time complexity of the above solution is exponential.
 
 //now, instead of trying all subset everytime, we can try to store the answer so that we can use it whenever we need it

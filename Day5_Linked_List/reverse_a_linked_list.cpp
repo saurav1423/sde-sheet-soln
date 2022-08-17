@@ -129,6 +129,11 @@ class LinkedList{
         }
 };
 
+//eg
+1 -> 2 -> 3-> 4
+recursive call hote hote, newHead 4 pe pahuch jayega, then 4 ka head->next null hai to 4 he return hoga, then at 3, head->next->next mtlb
+4 ke next me 3 ka address rkh rhe aur 3 ke next me null, and similarly doing for every node
+
 
 int main(){
 
