@@ -1,0 +1,22 @@
+Full Binary Tree
+  Either have 0 or 2 children
+
+Complete Binary Tree
+  All levels filled except the last one
+  Last level has nodes as left as possible
+
+Perfect Binary Tree    
+  All leaf nodes are at same level
+
+Balanced Binary Tree
+  Height should be max logN
+
+Degenerate Binary Tree
+  Skew tree, like Linked List
+
+The new operator is an operator which denotes a request for memory allocation on the Heap. If sufficient memory is available, new operator initializes the memory and returns the address of the newly allocated and initialized memory to the pointer variable.
+
+//bhut jgh use hua hai aur interview me puch skta
+Node* root = new Node(2)
+like this
+
